@@ -15,7 +15,7 @@ const UpcomingMovies = memo(() => {
       <SectionSlider
         title={title}
         list={upcommingMovie}
-        className="upcomimg-block streamit-block"
+        className="upcomimg-block Psymate Stream-block"
         slidesPerView={6}
       >
         {(data) => (
@@ -32,5 +32,5 @@ const UpcomingMovies = memo(() => {
   );
 });
 
-UpcomingMovies.displayName = "UpcomingMovies"
+UpcomingMovies.displayName = "UpcomingMovies";
 export default UpcomingMovies;

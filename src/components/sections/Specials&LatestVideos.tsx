@@ -15,7 +15,7 @@ const SpecialsLatestVideos = memo(() => {
       <SectionSlider
         title={title}
         list={latestMovie}
-        className="latest-block streamit-block"
+        className="latest-block Psymate Stream-block"
       >
         {(data) => (
           <CardStyle
@@ -29,7 +29,7 @@ const SpecialsLatestVideos = memo(() => {
       </SectionSlider>
     </Fragment>
   );
-})
+});
 
-SpecialsLatestVideos.displayName = 'SpecialsLatestVideos';
+SpecialsLatestVideos.displayName = "SpecialsLatestVideos";
 export default SpecialsLatestVideos;

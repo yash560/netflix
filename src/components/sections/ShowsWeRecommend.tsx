@@ -15,7 +15,7 @@ const ShowsWeRecommend = memo(() => {
       <SectionSlider
         title={title}
         list={recommendedforYou}
-        className="recommended-block streamit-block"
+        className="recommended-block Psymate Stream-block"
       >
         {(data) => (
           <CardStyle
@@ -29,7 +29,7 @@ const ShowsWeRecommend = memo(() => {
       </SectionSlider>
     </Fragment>
   );
-})
+});
 
-ShowsWeRecommend.displayName = 'ShowsWeRecommend';
+ShowsWeRecommend.displayName = "ShowsWeRecommend";
 export default ShowsWeRecommend;

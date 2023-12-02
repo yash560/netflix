@@ -7,7 +7,7 @@ import CardStyle from "../cards/CardStyle";
 //static data
 import { latestMovie } from "../../StaticData/data";
 
-const BestOfInternationalShows = memo(()=> {
+const BestOfInternationalShows = memo(() => {
   const [title] = useState("Best Of InternationalShows");
 
   return (
@@ -15,7 +15,7 @@ const BestOfInternationalShows = memo(()=> {
       <SectionSlider
         title={title}
         list={latestMovie}
-        className="recommended-block section-top-spacing streamit-block"
+        className="recommended-block section-top-spacing Psymate Stream-block"
       >
         {(data) => (
           <CardStyle
@@ -29,7 +29,7 @@ const BestOfInternationalShows = memo(()=> {
       </SectionSlider>
     </Fragment>
   );
-})
+});
 
-BestOfInternationalShows.displayName = 'BestOfInternationalShows';
+BestOfInternationalShows.displayName = "BestOfInternationalShows";
 export default BestOfInternationalShows;

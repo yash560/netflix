@@ -15,7 +15,7 @@ const SuggestedBlock = memo(() => {
       <SectionSlider
         title={title}
         list={suggested}
-        className="suggested-block streamit-block"
+        className="suggested-block Psymate Stream-block"
         slidesPerView={6}
       >
         {(data) => (
@@ -32,5 +32,5 @@ const SuggestedBlock = memo(() => {
   );
 });
 
-SuggestedBlock.displayName = 'SuggestedBlock';
+SuggestedBlock.displayName = "SuggestedBlock";
 export default SuggestedBlock;

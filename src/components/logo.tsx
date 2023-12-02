@@ -6,23 +6,24 @@ import Link from "next/link";
 const Logo = memo(() => {
   return (
     <Fragment>
-      <div className="logo-default">
+      PSYMATE STREAM
+      {/* <div className="logo-default">
         <Link className="navbar-brand text-primary" href="/">
           <img
             className="img-fluid logo"
             src="/assets/images/logo.webp"
             loading="lazy"
-            alt="streamit"
+            alt="Psymate Stream"
           />
         </Link>
-      </div>
-      <div className="logo-hotstar">
+      </div> */}
+      {/* <div className="logo-hotstar">
         <Link className="navbar-brand text-primary" href="/">
           <img
             className="img-fluid logo"
             src="/assets/images/logo-hotstar.webp"
             loading="lazy"
-            alt="streamit"
+            alt="Psymate Stream"
           />
         </Link>
       </div>
@@ -32,7 +33,7 @@ const Logo = memo(() => {
             className="img-fluid logo"
             src="/assets/images/logo-prime.webp"
             loading="lazy"
-            alt="streamit"
+            alt="Psymate Stream"
           />
         </Link>
       </div>
@@ -42,10 +43,10 @@ const Logo = memo(() => {
             className="img-fluid logo"
             src="/assets/images/logo-hulu.webp"
             loading="lazy"
-            alt="streamit"
+            alt="Psymate Stream"
           />
         </Link>
-      </div>
+      </div> */}
     </Fragment>
   );
 });

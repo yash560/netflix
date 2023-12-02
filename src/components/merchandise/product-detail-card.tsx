@@ -10,23 +10,22 @@ import Link from "next/link";
 //sweetalert2
 import Swal from "sweetalert2";
 
-interface ProductDetailCardProps{
+interface ProductDetailCardProps {
   additional_info: any;
   tags: any;
   category: any;
-  is_sale?:boolean
-  is_new?:boolean
-  thumbnail?:any
-  productName?:string
-  product_name?:string
-  price?:string
-  final_price?:string
-  description?:string
-  sku?:any
-  
+  is_sale?: boolean;
+  is_new?: boolean;
+  thumbnail?: any;
+  productName?: string;
+  product_name?: string;
+  price?: string;
+  final_price?: string;
+  description?: string;
+  sku?: any;
 }
 
-const ProductDetailCard = memo((props:ProductDetailCardProps) => {
+const ProductDetailCard = memo((props: ProductDetailCardProps) => {
   const showSwal = () => {
     Swal.fire({
       title: "Added!",
@@ -150,7 +149,7 @@ const ProductDetailCard = memo((props:ProductDetailCardProps) => {
               <br />
               <div className="mb-3">
                 Categories :{" "}
-                {props.category.map((item:any, index:any) => {
+                {props.category.map((item: any, index: any) => {
                   return (
                     <Link
                       href="/shop"
@@ -165,7 +164,7 @@ const ProductDetailCard = memo((props:ProductDetailCardProps) => {
               </div>
               <div className="">
                 Tags :
-                {props.tags.map((item:any, index:any) => {
+                {props.tags.map((item: any, index: any) => {
                   return (
                     <Link
                       href="/shop"
@@ -181,7 +180,7 @@ const ProductDetailCard = memo((props:ProductDetailCardProps) => {
           </Col>
         </Row>
         <div className="tab-content">
-          <div className="streamit-content-details content-details trending-info g-border iq-rtl-direction">
+          <div className="Psymate Stream-content-details content-details trending-info g-border iq-rtl-direction">
             <Tab.Container defaultActiveKey="first">
               <Nav
                 as="ul"
@@ -244,33 +243,37 @@ const ProductDetailCard = memo((props:ProductDetailCardProps) => {
                   data-attibute="rate"
                   data-options="infinite_scroll"
                 >
-                  <div id="additional-info" className="streamit-reviews">
+                  <div id="additional-info" className="Psymate Stream-reviews">
                     <div className="description-content">
                       <table className="addtable mb-5">
                         <tbody>
                           <tr>
                             <th className="thwidth">Size</th>
                             <td className="bordertd">
-                              {props.additional_info.map((item:any, index:any) => {
-                                return (
-                                  <Link href="#" rel="color" key={index}>
-                                    {item.size.map((size:any, index:any) => {
-                                      return (
-                                        <Link
-                                          href="#"
-                                          className="ms-2"
-                                          key={index}
-                                        >
-                                          {size},
-                                        </Link>
-                                      );
-                                    })}
-                                    <Link href="#" className="ms-2">
-                                      {item.color}
+                              {props.additional_info.map(
+                                (item: any, index: any) => {
+                                  return (
+                                    <Link href="#" rel="color" key={index}>
+                                      {item.size.map(
+                                        (size: any, index: any) => {
+                                          return (
+                                            <Link
+                                              href="#"
+                                              className="ms-2"
+                                              key={index}
+                                            >
+                                              {size},
+                                            </Link>
+                                          );
+                                        }
+                                      )}
+                                      <Link href="#" className="ms-2">
+                                        {item.color}
+                                      </Link>
                                     </Link>
-                                  </Link>
-                                );
-                              })}
+                                  );
+                                }
+                              )}
                             </td>
                           </tr>
                           <tr>
@@ -299,7 +302,7 @@ const ProductDetailCard = memo((props:ProductDetailCardProps) => {
                 >
                   <div
                     id="reviews"
-                    className="streamit-reviews"
+                    className="Psymate Stream-reviews"
                     style={{ fontSize: "1.1em" }}
                   >
                     <h2>Reviews</h2>

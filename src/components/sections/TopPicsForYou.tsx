@@ -16,7 +16,7 @@ const TopPicsForYou = memo(() => {
       <SectionSlider
         title={title}
         list={topTen}
-        className="recommended-block streamit-block"
+        className="recommended-block Psymate Stream-block"
         slidesPerView={6}
       >
         {(data) => (
@@ -31,7 +31,7 @@ const TopPicsForYou = memo(() => {
       </SectionSlider>
     </Fragment>
   );
-})
+});
 
-TopPicsForYou.displayName = 'TopPicsForYou';
+TopPicsForYou.displayName = "TopPicsForYou";
 export default TopPicsForYou;

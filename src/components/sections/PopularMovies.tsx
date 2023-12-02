@@ -7,9 +7,7 @@ import CardStyle from "../cards/CardStyle";
 //static data
 import { populerSlider } from "../../StaticData/data";
 
-
-
-const PopularMovies = memo(()=> {
+const PopularMovies = memo(() => {
   const [title] = useState("Popular Movies");
 
   return (
@@ -17,7 +15,7 @@ const PopularMovies = memo(()=> {
       <SectionSlider
         title={title}
         list={populerSlider}
-        className="popular-movies-block streamit-block"
+        className="popular-movies-block Psymate Stream-block"
       >
         {(data) => (
           <CardStyle
@@ -31,7 +29,7 @@ const PopularMovies = memo(()=> {
       </SectionSlider>
     </Fragment>
   );
-})
+});
 
-PopularMovies.displayName = 'PopularMovies';
+PopularMovies.displayName = "PopularMovies";
 export default PopularMovies;

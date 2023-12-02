@@ -5,11 +5,8 @@ import Link from "next/link";
 // react-bootstrap
 import { Container, Row, Col } from "react-bootstrap";
 
-
-
 // components
 import Logo from "../logo";
-
 
 const FooterMega = memo(() => {
   const [animationClass, setAnimationClass] = useState("animate__fadeIn");
@@ -52,12 +49,12 @@ const FooterMega = memo(() => {
                   </div>
                   <p className="mb-4 font-size-14">
                     Email us:{" "}
-                    <span className="text-white">customer@streamit.com</span>
+                    <span className="text-white">info@psymate.org</span>
                   </p>
                   <p className="text-uppercase letter-spacing-1 font-size-14 mb-1">
                     customer services
                   </p>
-                  <p className="mb-0 contact text-white">+ (480) 555-0103</p>
+                  <p className="mb-0 contact text-white">+ 6399006060</p>
                 </Col>
                 <Col xl={2} lg={6} className="mb-5 mb-lg-0">
                   <h4 className="footer-link-title">Quick Links</h4>
@@ -204,23 +201,31 @@ const FooterMega = memo(() => {
                   </ul>
                   <p className="font-size-14">
                     © <span className="currentYear">2023</span>{" "}
-                    <span className="text-primary">STREAMIT</span>. All Rights
-                    Reserved. All videos and shows on this platform are
+                    <span className="text-primary">Psymate Stream</span>. All
+                    Rights Reserved. All videos and shows on this platform are
                     trademarks of, and all related images and content are the
-                    property of, Streamit Inc. Duplication and copy of this is
-                    strictly prohibited. All rights reserved.
+                    property of, Psymate Stream Inc. Duplication and copy of
+                    this is strictly prohibited. All rights reserved.
                   </p>
                 </Col>
                 <Col md={3}></Col>
                 <Col md={3}>
-                  <h6 className="font-size-14 pb-1">Download Streamit Apps</h6>
+                  <h6 className="font-size-14 pb-1">Download Psymate Apps</h6>
                   <div className="d-flex align-items-center">
                     <Link className="app-image" href="#">
-                      <img src="/assets/images/footer/google-play.webp" loading="lazy" alt="play-store" />
+                      <img
+                        src="/assets/images/footer/google-play.webp"
+                        loading="lazy"
+                        alt="play-store"
+                      />
                     </Link>
                     <br />
                     <Link className="ms-3 app-image" href="#">
-                      <img src="/assets/images/footer/apple.webp" loading="lazy" alt="app-store" />
+                      <img
+                        src="/assets/images/footer/apple.webp"
+                        loading="lazy"
+                        alt="app-store"
+                      />
                     </Link>
                   </div>
                 </Col>
